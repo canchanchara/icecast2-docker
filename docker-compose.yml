@@ -8,5 +8,5 @@ services:
      - icecast:/etc/icecast2
     restart: unless-stopped
 volumes:
-  icecast-bbg:
+  icecast:
     driver: local
