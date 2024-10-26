@@ -1,0 +1,12 @@
+services:
+  icecast:
+    image: icecast
+    container_name: icecast
+    ports:
+      - "8000:8000"
+    volumes:
+     - icecast:/etc/icecast2
+    restart: unless-stopped
+volumes:
+  icecast-bbg:
+    driver: local
